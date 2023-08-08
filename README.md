@@ -36,7 +36,7 @@ Add to your ~/.config/lf/lfrc:
 	set previewer ~/.config/ranger/scope.sh
 	
 
-While looking for a simple solution to enable previews in lf, I also stubled upon this additional script that adds sandboxing to the preview by using bubblewrap:
+While looking for a simple solution to enable previews in lf, I also stumbled upon this additional script that adds sandboxing to the preview by using bubblewrap:
 
 https://github.com/gokcehan/lf/wiki/Previews#sandboxing-preview-operations
 
