@@ -4,8 +4,6 @@ tldr;
 Moving from ranger to the more modern terminal file manager lf requires some configuration steps if you wish for similar behavior. This page explains how this can be achived. This repo contains the configuration file that implement a more ranger like behavior in lf. 
 
 
-
-
 ## Why? ##
 
 For those who have come to love terminal based file managers, ranger is likely one of the coolest open source tools out there. And while it has revolutionized my workflows when working with files on Linux, there were still some issues. Moving large files or navigating through directories with many files, could lead to performance issues that could not be easily fixed, eitehr because of the core architecture of rangers code or because it was written in python with intended legacy support. Fortunately, some time ago someone made lf (list files), a new terminal based file manager which was inspired by ranger but written in go. Unlike ranger, lf is build around a core feature set that focuses on file mangement, while also allowing extentive customization through its configuration. Consequently, it is both a minimal, clean file manager and at the same time it can be extended with any feature someone might wish for.
@@ -95,7 +93,7 @@ In lf, files that have been copied are marked and stay marked after being pasted
 ### colors ###
 
 Lf uses GNU dircolors defaults to display different file types. This can be changed by adapting the colors file in the lf configuration directory.
-Add [this](https://github.com/grebeard/lf-howto/blob/main/lfrc/colors)colors files to your lf config directory (~/.config/lf/colors) to change the colors to rangers defaults.
+Add [this](https://github.com/grebeard/lf-howto/blob/main/lfrc/colors) colors files to your lf config directory (~/.config/lf/colors) to change the colors to rangers defaults.
 
 #### The configuration in this repo has been created and tested with lf version 30
 
