@@ -3,6 +3,8 @@
 set -C -f -u 
 IFS=$'\n'
 
+## This is a minimal version of rangers scope.sh preview script, written for lf
+
 # ANSI color codes are supported.
 # STDIN is disabled, so interactive scripts won't work properly
 
