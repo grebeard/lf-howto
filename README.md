@@ -51,7 +51,7 @@ Simply change the previewer to this instead if you want to add a bit of security
 
 ### Deleting files / Trash ###
 
-By default, the delete command is not enabled in lf, so we need to add it if we want to remove files or move it to the trash. One of the cool projects I found while experimenting with lf was trash-cli and how easy it integreates into lf:
+By default, the delete command is not enabled in lf, so we need to add it if we want to remove files or move it to the trash. One of the cool projects I found while experimenting with lf was trash-cli and how easy it integrates into lf:
 
 
 	cmd trash %trash-put $fx
