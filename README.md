@@ -29,14 +29,20 @@ Add this export to your shell configuration files (e.g. bashrc or zshrc) to take
 
 ### File Previews ###
 
-By default, lf will only preview text files. To enable previews for other file types, we can use the same script that is used by ranger.
+By default, lf will only preview text files. To enable previews for other file types, we can use the same script that is used by ranger. Since the argument number of ranger is different, we use a simple wrapper script:
+
+Content of wrapper script named "scope-lf-wrapper.sh" 
+
+    #!/bin/sh
+    "$HOME/.config/ranger/scope.sh" "${1}" "${2}" "${3}" "" "" || true
+
 
 Add to your ~/.config/lf/lfrc:
  
-	set previewer ~/.config/ranger/scope.sh
+	set previewer ~/.config/ranger/scope-lf-wrapper.sh
 	
 
-While looking for a simple solution to enable previews in lf, I also stumbled upon this additional script that adds sandboxing to the preview by using bubblewrap:
+While looking for a simple solution to enable previews in lf, I also stubled upon this additional script that adds sandboxing to the preview by using bubblewrap:
 
 https://github.com/gokcehan/lf/wiki/Previews#sandboxing-preview-operations
 
@@ -89,8 +95,7 @@ In lf, files that have been copied are marked and stay marked after being pasted
 ### colors ###
 
 Lf uses GNU dircolors defaults to display different file types. This can be changed by adapting the colors file in the lf configuration directory.
-Add the colors files from this repo to your lf config to change the colors to adapt to rangers defaults.
-
+Add [this](https://github.com/grebeard/lf-howto/blob/main/lfrc/colors)colors files to your lf config directory (~/.config/lf/colors) to change the colors to rangers defaults.
 
 #### The configuration in this repo has been created and tested with lf version 30
 
