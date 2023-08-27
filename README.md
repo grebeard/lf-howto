@@ -1,8 +1,9 @@
 # How to move from ranger to lf
 
 tldr;
-Moving from ranger to the more modern terminal file manager lf requires some configuration steps if you wish for similar behavior. This page explains how this can be achived and provides example configuration files that implement a more ranger like behavior in lf. 
+Moving from ranger to the more modern terminal file manager [lf](https://github.com/gokcehan/lf) requires some configuration steps if you wish for similar behavior. This page explains how this can be achived and provides example configuration files that implement a more ranger like behavior in lf. 
 
+Update: This guide has moved to the lf project wiki https://github.com/gokcehan/lf/wiki/Ranger
 
 ## Why? ##
 
